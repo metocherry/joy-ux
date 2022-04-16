@@ -1,6 +1,14 @@
 {
   "name": "joy-ux",
-  "packageManager": "yarn@3.2.0",
+  "main": "",
+  "types": "",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "lint": "eslint src/**/*{.js,.ts,.jsx,.tsx}",
     "lint:fix": "yarn lint --fix",
@@ -26,5 +34,6 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
     "typescript": "^4.6.3"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
