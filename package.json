@@ -7,7 +7,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "(src|server)/**/*.(ts|tsx)": [
+    "src/**/*.(ts|tsx)": [
       "yarn lint:fix"
     ]
   },

@@ -1,4 +1,4 @@
-/** test */
+/** hello */
 function hello(): string {
   return 'hello world';
 }
