@@ -1,6 +1,6 @@
 /** test */
-function a(): string {
+function hello(): string {
   return 'hello world';
 }
 
-export default a;
+export default hello;
