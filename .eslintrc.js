@@ -21,6 +21,7 @@ module.exports = {
       tabWidth: 2,
       ignoreComments: true,
       ignoreUrls: true,
+      ignoreStrings: true,
       ignoreTemplateLiterals: true,
       ignoreRegExpLiterals: true,
     }],
