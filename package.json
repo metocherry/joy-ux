@@ -2,7 +2,14 @@
   "name": "joy-ux",
   "packageManager": "yarn@3.2.0",
   "scripts": {
-    "lint": "eslint src/**/*{.js,.ts,.jsx,.tsx}"
+    "lint": "eslint src/**/*{.js,.ts,.jsx,.tsx}",
+    "lint:fix": "yarn lint --fix",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.(ts|tsx)": [
+      "yarn lint:fix"
+    ]
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -16,6 +23,8 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-jsdoc": "^39.2.1",
     "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
     "typescript": "^4.6.3"
   }
 }
