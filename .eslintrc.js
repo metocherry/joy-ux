@@ -28,6 +28,11 @@ module.exports = {
 
     'quotes': ['error', 'single'],
     '@typescript-eslint/quotes': ['error', 'single'],
+
+    'object-curly-spacing': ['error', 'always', { arraysInObjects: true }],
+    'object-curly-newline': ['error', {
+      consistent: true,
+    }],
   },
   settings: {
     react: {
